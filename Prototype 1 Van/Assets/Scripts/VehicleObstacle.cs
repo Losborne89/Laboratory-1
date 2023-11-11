@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class VehicleObstacle : MonoBehaviour
 {
-    [SerializeField]
-    private float speed = 30f;
+    [SerializeField] private float speed = 30f;
     private float horizontalInput;
 
 

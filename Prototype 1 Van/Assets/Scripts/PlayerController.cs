@@ -51,6 +51,8 @@ public class PlayerController : MonoBehaviour
 
     bool IsOnGround()
     {
+
+        // Checks when 4 wheels are on ground
         wheelsOnGround = 0;
         foreach (WheelCollider wheel in allWheels)
         {
@@ -60,6 +62,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        // Stops wheels when not grounded
         if(wheelsOnGround == 4)
         {
             return true;
